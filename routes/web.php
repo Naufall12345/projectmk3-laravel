@@ -15,3 +15,6 @@ Route::get('/welcome', function () {
     return view('welcome'); //menuju ke file wlelcome.blade.php di folder resources-views
 });
 
+Route::get('/about', function () {
+    return view('about'); 
+});

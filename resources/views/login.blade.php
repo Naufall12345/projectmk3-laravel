@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="CSS/login.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
+        <!-- Tambahkan Tailwind CSS dari CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <form id="loginForm">
-            <div>
-                <label for="username">Username : </label>
-                <input type="text" name="username" id="username">
+    <body class="bg-blue-400 flex items-center justify-center min-h-screen">
+
+        <!-- Form Login -->
+        <form id="loginForm" class="bg-white p-8 rounded-lg shadow-md w-96">
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 font-bold mb-2">Username : </label>
+                <input type="text" name="username" id="username" class="w-full px-4 py-2 border border-gray-300 rounded-md bg-yellow-100 focus:outline-none focus:border-blue-500">
             </div>
-            <div>
-                <label for="password">Password : </label>
-                <input type="password" name="password" id="password">
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 font-bold mb-2">Password : </label>
+                <input type="password" name="password" id="password" class="w-full px-4 py-2 border border-gray-300 rounded-md bg-yellow-100 focus:outline-none focus:border-blue-500">
             </div>
-            <button type="submit">LOGIN</button>
+            <button type="submit" class="w-full bg-blue-300 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-400 transition duration-300">LOGIN</button>
         </form>
 
         <script src="JS/script.js"></script>
